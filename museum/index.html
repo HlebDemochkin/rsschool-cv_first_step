@@ -1,123 +1,213 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Музей</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louvre Museum - Official Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header id="header" class="site-header">
-    <div class="nav-container">
-      <a href="#welcome" class="logo">Museum</a>
-      <nav class="main-nav">
-        <ul class="nav-list">
-          <li><a href="#visiting">Посещение</a></li>
-          <li><a href="#explore">Исследовать</a></li>
-          <li><a href="#video">Видео</a></li>
-          <li><a href="#gallery">Галерея</a></li>
-          <li><a href="#tickets">Билеты</a></li>
-          <li><a href="#contacts">Контакты</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section id="welcome" class="section welcome-section">
-      <div class="welcome-container">
-        <h1 class="welcome-title">Добро пожаловать в музей</h1>
-        <p class="welcome-description">Исследуйте искусство, культуру и историю в уникальном пространстве.</p>
-        <a href="#visiting" class="welcome-button">Начать путешествие</a>
-      </div>
-    </section>
-
-    <section id="visiting" class="section visiting-section">
-      <div class="visiting-container">
-        <h2 class="section-title">Посещение музея</h2>
-        <ul class="visiting-list">
-          <li class="visiting-item"><h3>Часы работы</h3><p>Пн–Вс: 10:00–20:00</p></li>
-          <li class="visiting-item"><h3>Адрес</h3><p>г. Амстердам, Музейный переулок, д.12</p></li>
-          <li class="visiting-item"><h3>Правила</h3><p>Безопасность, уважение, тишина</p></li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="explore" class="section explore-section">
-      <div class="explore-content">
-        <h2 class="section-title">Исследовать</h2>
-        <p>Здесь вы откроете для себя тайны культуры и искусства.</p>
-      </div>
-    </section>
-
-    <section id="video" class="section video-section">
-      <div class="video-container">
-        <h2 class="section-title">Видеоэкскурсия</h2>
-        <video controls poster="assets/images/video-poster.jpg">
-          <source src="assets/videos/museum-tour.mp4" type="video/mp4" />
-        </video>
-      </div>
-    </section>
-
-    <section id="gallery" class="section gallery-section">
-      <div class="gallery-container">
-        <h2 class="section-title">Галерея</h2>
-        <div class="gallery-grid">
-          <img src="assets/images/gallery1.jpg" alt="Экспонат 1" />
-          <img src="assets/images/gallery2.jpg" alt="Экспонат 2" />
-          <img src="assets/images/gallery3.jpg" alt="Экспонат 3" />
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="logo">LOUVRE</div>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#visiting" class="nav__link">Visiting</a></li>
+                        <li class="nav__item"><a href="#explore" class="nav__link">Explore</a></li>
+                        <li class="nav__item"><a href="#video" class="nav__link">Video</a></li>
+                        <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+                        <li class="nav__item"><a href="#tickets" class="nav__link">Tickets</a></li>
+                        <li class="nav__item"><a href="#contacts" class="nav__link">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="header__hero">
+                <h1 class="hero__title">WELCOME<br>TO THE LOUVRE</h1>
+                <p class="hero__subtitle">From the castle to the museum</p>
+                <button class="btn btn--primary">Discover the Louvre</button>
+                <div class="slider-controls">
+                    <span class="slider__counter">01 | 05</span>
+                    <div class="slider__arrows">
+                        <button class="slider__arrow slider__arrow--prev">←</button>
+                        <button class="slider__arrow slider__arrow--next">→</button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
+    </header>
 
-    <section id="tickets" class="section tickets-section">
-      <div class="tickets-container">
-        <h2 class="section-title">Билеты</h2>
-        <div class="tickets-grid">
-          <div class="ticket-card"><h3>Стандарт</h3><p>10 €</p><button>Купить</button></div>
-          <div class="ticket-card"><h3>Групповой</h3><p>8 € / чел.</p><button>Купить</button></div>
-          <div class="ticket-card"><h3>Онлайн</h3><p>Бесплатно</p><button>Получить</button></div>
+    <main>
+        <section class="virtual-tour" id="visiting">
+            <div class="container">
+                <h2 class="section-title">VIRTUAL TOUR</h2>
+                <h3 class="section-subtitle">NIGHT PALACE</h3>
+                <p class="section-description">"Virtual Tour</p>
+                <div class="panorama">
+                    <img src="placeholder-panorama.jpg" alt="300gle Street Panorama View" class="panorama__image">
+                    <p class="panorama__caption">300gle Street Panorama View</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="picture-explore" id="explore">
+            <div class="container">
+                <h2 class="section-title">PICTURE EXPLORE</h2>
+                <div class="picture-info">
+                    <div class="picture-text">
+                        <p>Las Meninas is a 1656 painting by Diego Velazquez, the leading artist of the Spanish Golden Age.</p>
+                        <p>It was cleaned in 1984 to remove a <span class="text-gap">[layer]</span> of dust that had gathered since the previous restoration in the 19th century.</p>
+                        <p>The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
+                    </div>
+                    <div class="picture-image">
+                        <img src="placeholder-painting.jpg" alt="Las Meninas by Diego Velazquez" class="painting__image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video" id="video">
+            <div class="container">
+                <h2 class="section-title">VIDEO TOUR</h2>
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <img src="video-poster.jpg" alt="Louvre Museum Video Tour" class="video-poster">
+                        <button class="play-button">
+                            <svg class="play-icon" viewBox="0 0 24 24">
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <div class="container">
+                <h2 class="section-title">GALLERY</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-card">
+                        <img src="gallery-1.jpg" alt="Mona Lisa by Leonardo da Vinci" class="gallery-image">
+                        <h3 class="gallery-title">Mona Lisa</h3>
+                        <p class="gallery-description">Leonardo da Vinci, 1503</p>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="gallery-2.jpg" alt="The Wedding at Cana by Paolo Veronese" class="gallery-image">
+                        <h3 class="gallery-title">The Wedding at Cana</h3>
+                        <p class="gallery-description">Paolo Veronese, 1563</p>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="gallery-3.jpg" alt="Liberty Leading the People by Eugène Delacroix" class="gallery-image">
+                        <h3 class="gallery-title">Liberty Leading the People</h3>
+                        <p class="gallery-description">Eugène Delacroix, 1830</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="journey parallax-section">
+            <div class="container">
+                <div class="journey__content">
+                    <div class="journey__text">
+                        <span class="journey__label">VIDEO</span>
+                        <h2 class="journey__title">JOURNEY</h2>
+                        <p class="journey__description">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
+                    </div>
+                    <div class="journey__image">
+                        <img src="placeholder-venus.jpg" alt="Venus de Milo" class="journey__img parallax-layer">
+                        <p class="image-caption">Au Louvre ! La Venus de Milo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tickets" id="tickets">
+            <div class="container">
+                <h2 class="section-title">BUY TICKETS</h2>
+                <form class="ticket-form">
+                    <div class="form-group">
+                        <label class="ticket-option">
+                            <input type="radio" name="ticket-type" value="permanent" checked>
+                            <span class="radio-custom"></span>
+                            <span class="ticket-label">Permanent exhibition</span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="ticket-option">
+                            <input type="radio" name="ticket-type" value="temporary">
+                            <span class="radio-custom"></span>
+                            <span class="ticket-label">Temporary exhibition</span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="ticket-option">
+                            <input type="radio" name="ticket-type" value="combined">
+                            <span class="radio-custom"></span>
+                            <span class="ticket-label">Combined Admission</span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="ticket-quantity">
+                            <span class="quantity-label">Adults:</span>
+                            <input type="number" min="1" max="10" value="1" class="quantity-input">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="ticket-quantity">
+                            <span class="quantity-label">Children:</span>
+                            <input type="number" min="0" max="10" value="0" class="quantity-input">
+                        </label>
+                    </div>
+                    <div class="form-total">
+                        <span class="total-label">Total</span>
+                        <span class="total-amount">€220</span>
+                    </div>
+                    <button type="submit" class="btn btn--secondary">Purchase</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <h2 class="section-title">CONTACTS</h2>
+                <address class="contact-info">
+                    <p class="contact-address">Palais Royal<br>Musee du Louvre</p>
+                    <p class="contact-city">001 Paris, France</p>
+                    <a href="tel:+140205050" class="contact-phone">0) 1 40 20 50 50</a>
+                    <a href="mailto:info@louvre.fr" class="contact-email">info@louvre.fr</a>
+                </address>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="logo">LOUVRE</div>
+                <nav class="footer-nav">
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item"><a href="#visiting" class="footer-nav__link">siting</a></li>
+                        <li class="footer-nav__item"><a href="#gallery" class="footer-nav__link">Gallery</a></li>
+                    </ul>
+                </nav>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <svg class="social-icon" viewBox="0 0 24 24">
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <svg class="social-icon" viewBox="0 0 24 24">
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg class="social-icon" viewBox="0 0 24 24">
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
-
-    <section id="contacts" class="section contacts-section">
-      <div class="contacts-container">
-        <h2 class="section-title">Связаться с нами</h2>
-        <form class="contact-form">
-          <input type="text" name="name" placeholder="Ваше имя" required />
-          <input type="email" name="email" placeholder="Email" required />
-          <textarea name="message" rows="5" placeholder="Сообщение" required></textarea>
-          <button type="submit">Отправить</button>
-        </form>
-      </div>
-    </section>
-
-    <section class="section tabs-section">
-      <h2 class="section-title">Интерактивная навигация</h2>
-      <div class="tabs">
-        <input type="radio" id="tab1" name="tabs" checked />
-        <label for="tab1" class="tab-label">Экспозиции</label>
-        <input type="radio" id="tab2" name="tabs" />
-        <label for="tab2" class="tab-label">История музея</label>
-        <input type="radio" id="tab3" name="tabs" />
-        <label for="tab3" class="tab-label">Контакты</label>
-        <div class="tab-content" id="content1"><p>Описание экспозиций...</p></div>
-        <div class="tab-content" id="content2"><p>История создания музея...</p></div>
-        <div class="tab-content" id="content3"><p>Email и телефон для связи...</p></div>
-      </div>
-    </section>
-  </main>
-
-  <footer id="footer" class="site-footer">
-    <div class="footer-container">
-      <p>&copy; 2025 Музей. Все права защищены.</p>
-      <nav class="footer-nav">
-        <a href="#welcome">Главная</a>
-        <a href="#contacts">Контакты</a>
-      </nav>
-    </div>
-  </footer>
+    </footer>
 </body>
 </html>
