@@ -1,4 +1,12 @@
 /* Base styles */
+a {
+    color: white;
+    text-decoration: none;
+}
+.color-red {
+  background-color: #710707;
+height: 50px;
+}
 :root {
     --primary-color: #000;
     --secondary-color: #333;
